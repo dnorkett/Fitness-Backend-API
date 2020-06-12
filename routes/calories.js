@@ -1,5 +1,5 @@
 const router = require('express').Router();
-let Calories = require('../models/calories.model');
+const Calories = require('../models/calories.model');
 
 router.route('/').get((req, res) => {
     Calories.find()
